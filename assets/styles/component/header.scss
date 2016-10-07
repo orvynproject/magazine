@@ -21,17 +21,34 @@
 			background-color: transparent;
 			color: $color-light;
 		}
-		i {
+		.btn {
+			background-color: transparent!important;
 			color: $color-light;
-			padding: 8px;
 			border: 1px solid $color-light;
-			border-radius: 4px;
 		}
 	}
 	a {
 		&:focus,
 		&:hover {
 			color: red;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#header{
+		.list-inline {
+			text-align: center;
+		}
+		.social-icons.pull-right {
+			float: none!important;
+			text-align: center;
+		}
+		.navbar-toggle {
+			&:focus,
+			&:hover {
+				background-color: transparent;
+			}
 		}
 	}
 }

@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="assets/css/orv-magz.css">
 	</head>
 	<body>
+		<div id="loading"></div>
 		<header id="header">
 			<div class="top-line">
 				<div class="container">
@@ -57,7 +58,7 @@
 						<form class="navbar-form navbar-right" role="search">
 							<div class="form-group">
 								<input type="text" class="form-control" placeholder="Search...">
-								<i class="fa fa-search"></i>
+								<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
 							</div>
 						</form>
 					</div>
@@ -66,11 +67,11 @@
 					<div class="container">
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="">HOME</a></li>
-							<li><a href="">FASHION</a></li>
-							<li><a href="">CAFE &amp; RESTO</a></li>
-							<li><a href="">MUSIC</a></li>
-							<li><a href="">SPORT</a></li>
-							<li><a href="">TRAVELING</a></li>
+							<li class=""><a href="">FASHION</a></li>
+							<li class=""><a href="">CAFE &amp; RESTO</a></li>
+							<li class=""><a href="">MUSIC</a></li>
+							<li class=""><a href="">SPORT</a></li>
+							<li class=""><a href="">TRAVELING</a></li>
 						</ul>
 					</div>
 				</div>
@@ -191,7 +192,7 @@
 		<section id="hot">
 			<div class="container">
 				<div class="page-header">
-					<h1>Hot<small> News</small></h1>
+					<h1>Recent<small> Updates</small></h1>
 				</div>
 				<div id="news-gallery" class="owl-carousel owl-theme">
 					<div class="thumbnail">
@@ -256,7 +257,7 @@
 							<h1>Cafe & Resto</h1>
 						</div>
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<div class="thumbnail">
 									<a href="">
 										<div class="image" style="background-image: url(images/article/cafe1.jpg);"></div>
@@ -269,7 +270,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<div class="thumbnail">
 									<a href="">
 										<div class="image" style="background-image: url(images/article/cafe2.jpg);"></div>
@@ -282,7 +283,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<div class="thumbnail">
 									<a href="">
 										<div class="image" style="background-image: url(images/article/cafe3.jpg);"></div>
@@ -295,7 +296,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<div class="thumbnail">
 									<a href="">
 										<div class="image" style="background-image: url(images/article/cafe4.jpg);"></div>
@@ -308,7 +309,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<div class="thumbnail">
 									<a href="">
 										<div class="image" style="background-image: url(images/article/cafe5.jpg);"></div>
@@ -321,7 +322,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-sm-4">
 								<div class="thumbnail">
 									<a href="">
 										<div class="image" style="background-image: url(images/article/cafe6.jpg);"></div>
@@ -694,50 +695,13 @@
 					<span>All rights reserved.</span>
 					<span class="pull-right">Site by : <a href="http://instagram.com/orvynproject" class="title" target="_blank">ORVYN PROJECT</a></span>
 				</p>
+				<a href="" class="gotop"><i class="fa fa-arrow-up"></i></a>
 			</footer>
 		</div>
 
 		<script src="assets/plugins/jquery/dist/jquery.min.js"></script>
 		<script src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
 		<script src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#top-slider").owlCarousel({
-					navigation : true,
-					slideSpeed : 300,
-					paginationSpeed : 400,
-					singleItem:true,
-					autoPlay: 3000,
-					stopOnHover : true
-				});
-				$("#news-slider").owlCarousel({
-					navigation : true,
-					dots: false,
-					slideSpeed : 300,
-					paginationSpeed : 400,
-					singleItem:true,
-					autoPlay: 3000,
-					stopOnHover : true
-				});
-				$("#news-gallery").owlCarousel({
-					autoPlay: 3000,
-					items : 4,
-					itemsDesktop : [1199,3],
-					itemsDesktopSmall : [979,3]
-				});
-				$("#image-gallery").owlCarousel({
-					autoPlay: 2000,
-					items : 6,
-					itemsDesktop : [1199,3],
-					itemsDesktopSmall : [979,3]
-				});
-				$("#powered-gallery").owlCarousel({
-					autoPlay: 2000,
-					items : 6,
-					itemsDesktop : [1199,3],
-					itemsDesktopSmall : [979,3]
-				});
-			});
-		</script>
+		<script src="assets/js/orv-magz.js"></script>
 	</body>
 </html>
