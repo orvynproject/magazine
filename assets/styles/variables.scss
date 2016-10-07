@@ -1,0 +1,34 @@
+/*!
+ * ORV Magz v1.0.0 (http://orvynproject.com)
+ * Copyright 2016 ORVYN PROJECT, Inc.
+ */
+
+@font-face {
+	font-family: 'Varela';
+	src: url(../../assets/fonts/Varela-Regular.ttf);
+}
+@font-face {
+	font-family: 'Orbitron';
+	src: url(../../assets/fonts/Orbitron-Regular.ttf);
+}
+//---FONTS---
+$font-primary: 'Varela';
+$font-style: 'Orbitron';
+
+$bg-dark: #000000;
+$bg-dark-trans: rgba(0,0,0,0.8);
+$bg-inner: #EEEEEE;
+$bg-red: #5B0F0E;
+
+$hr-inner: #CCCCCC;
+
+$color-dark: #999999;
+$color-dark-hover: #222222;
+$color-light: #AAA;
+
+//socialmedia
+$fb-color: #3B5998;
+$tw-color: #36B9FF;
+$ig-color: #C20096;
+$sc-color: #FF6E23;
+$yt-color: #CC181E;
