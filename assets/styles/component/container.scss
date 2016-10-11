@@ -50,14 +50,14 @@ section#breaking-news {
 	}
 }
 #loading {
-	display: none;
+	//display: none;
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../../images/load.gif) 50% 50% no-repeat #ede9df;
+	background: url(../../images/loader.gif) 50% 50% no-repeat #FFF;
 }
 .title {
 	font-family: $font-style;

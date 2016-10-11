@@ -20,6 +20,8 @@
 	</head>
 	<body>
 
+		<div id="loading"></div>
+
 		<header id="header">
 			<div class="top-line">
 				<div class="container">
@@ -704,5 +706,11 @@
 		<script src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
 		<script src="assets/js/orv-magz.js"></script>
 		<script src="assets/js/scroll-top.js"></script>
+		<script type="text/javascript">
+			$(window).on('load', function(event) {
+				event.preventDefault();
+				$('#loading').fadeOut('slow');
+			});
+		</script>
 	</body>
 </html>
