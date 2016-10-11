@@ -1,4 +1,9 @@
-$(document).ready(function() {
+jQuery(window).on('load', function(event) {
+	event.preventDefault();
+	$('#preload').fadeOut('slow');
+});
+
+jQuery(document).ready(function() {
 	$("#top-slider").owlCarousel({
 		navigation : true,
 		slideSpeed : 300,

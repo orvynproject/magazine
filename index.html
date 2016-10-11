@@ -20,7 +20,7 @@
 	</head>
 	<body>
 
-		<div id="loading"></div>
+		<div id="preload"></div>
 
 		<header id="header">
 			<div class="top-line">
@@ -85,7 +85,7 @@
 				<div class="row">
 					<div class="col-md-6 no-padding">
 						<div id="top-slider" class="owl-carousel owl-theme">
-							<div class="item" style="background-image: url(images/article/as1.jpg);">
+							<div class="item" style="background-image: url(images/article/as1.jpg);" onload="alert('yes');">
 								<div class="well navbar-fixed-bottom text-center">
 									<a href="">
 										<h1>Slider 1</h1>
@@ -706,11 +706,5 @@
 		<script src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.min.js"></script>
 		<script src="assets/js/orv-magz.js"></script>
 		<script src="assets/js/scroll-top.js"></script>
-		<script type="text/javascript">
-			$(window).on('load', function(event) {
-				event.preventDefault();
-				$('#loading').fadeOut('slow');
-			});
-		</script>
 	</body>
 </html>

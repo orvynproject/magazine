@@ -115,7 +115,10 @@ section {
   padding-bottom: 50px; }
 
 section#slider {
-  padding: 0; }
+  padding: 0;
+  position: relative; }
+  section#slider #preload-slider {
+    position: absolute; }
 
 section#breaking-news {
   background-color: #5B0F0E; }
@@ -137,8 +140,8 @@ section#breaking-news {
   section#breaking-news .owl-pagination {
     display: none; }
 
-#loading {
-  position: fixed;
+#preload, section#slider #preload-slider {
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
