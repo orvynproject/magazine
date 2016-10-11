@@ -1,3 +1,5 @@
+loadHeader();
+
 function loadHeader() {
 	$.ajax({
 		url: 'pages/layout/header.html',
@@ -6,6 +8,7 @@ function loadHeader() {
 		success: function(msg) {
 			console.log('loadHeader');
 			$('.content-header').html(msg);
+			loadSlider();
 		}
 	});
 }

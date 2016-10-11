@@ -1,3 +1,4 @@
+goTop();
 function goTop() {
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 400) {
