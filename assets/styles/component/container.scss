@@ -24,11 +24,6 @@ section {
 }
 section#slider {
 	padding: 0;
-	position: relative;
-	#preload-slider {
-		position: absolute;
-		@extend #preload;
-	}
 }
 section#breaking-news {
 	background-color: $bg-red;
@@ -55,7 +50,7 @@ section#breaking-news {
 	}
 }
 #preload {
-	position: absolute;
+	position: fixed;
 	left: 0;
 	top: 0;
 	width: 100%;
