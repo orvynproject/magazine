@@ -1,15 +1,10 @@
-loadHeader();
-loadSlider();
-loadBreakingNews();
-loadRecentUpdates();
-loadFooter();
-
 function loadHeader() {
 	$.ajax({
 		url: 'pages/layout/header.html',
 		type: 'GET',
 		dataType: 'html',
 		success: function(msg) {
+			console.log('loadHeader');
 			$('.content-header').html(msg);
 		}
 	});
@@ -21,6 +16,7 @@ function loadSlider() {
 		type: 'GET',
 		dataType: 'html',
 		success: function(msg) {
+			console.log('loadSlider');
 			$('.content-slider').html(msg);
 		}
 	});
@@ -31,6 +27,7 @@ function loadBreakingNews() {
 		type: 'GET',
 		dataType: 'html',
 		success: function(msg) {
+			console.log('loadBreakingNews');
 			$('.content-breaking-news').html(msg);
 		}
 	});
@@ -42,6 +39,7 @@ function loadRecentUpdates() {
 		type: 'GET',
 		dataType: 'html',
 		success: function(msg) {
+			console.log('loadRecentUpdates');
 			$('.content-recent-updates').html(msg);
 		}
 	});
@@ -53,6 +51,7 @@ function loadFooter() {
 		type: 'GET',
 		dataType: 'html',
 		success: function(msg) {
+			console.log('loadFooter');
 			$('.content-footer').html(msg);
 		}
 	});
