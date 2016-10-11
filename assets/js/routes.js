@@ -45,6 +45,42 @@ function loadRecentUpdates() {
 	});
 }
 
+function loadRandom() {
+	$.ajax({
+		url: 'pages/home/random.html',
+		type: 'GET',
+		dataType: 'html',
+		success: function(msg) {
+			console.log('loadRandom');
+			$('.content-random').html(msg);
+		}
+	});
+}
+
+function loadGallery() {
+	$.ajax({
+		url: 'pages/home/gallery.html',
+		type: 'GET',
+		dataType: 'html',
+		success: function(msg) {
+			console.log('loadGallery');
+			$('.content-gallery').html(msg);
+		}
+	});
+}
+
+function loadPowered() {
+	$.ajax({
+		url: 'pages/home/powered.html',
+		type: 'GET',
+		dataType: 'html',
+		success: function(msg) {
+			console.log('loadPowered');
+			$('.content-powered').html(msg);
+		}
+	});
+}
+
 function loadFooter() {
 	$.ajax({
 		url: 'pages/layout/footer.html',
